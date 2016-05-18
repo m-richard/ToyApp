@@ -1,0 +1,11 @@
+<%= form_for @food do |f| %>
+  <%= f.label :kind %>:
+  <%= f.text_field :kind %><br />
+
+  <%= f.label :description %>:
+  <%= f.text_field :description %><br />
+
+  <%= f.select :menu_id, @menus %>
+
+  <%= f.submit %>
+<% end %>
